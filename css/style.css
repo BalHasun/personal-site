@@ -375,10 +375,96 @@ body {
     line-height: 35px;
 }
 
-/* .container .raw main .projects .projects-items {}
-.container .raw main .projects .projects-items .projects-items {}
-.container .raw main .projects .projects-items .projects-items .projects-item {}
-.container .raw main .projects .projects-items .projects-items .projects-item a {} */
+.container .raw main .projects .projects-items {
+    margin: 30px 0px;
+
+}
+
+/* .container .raw main .projects .projects-items .projects-items {} */
+
+.container .raw main .projects .projects-items ul.projects-items li.projects-item {
+    padding: 30px;
+    width: 45%;
+    margin: 0px 0px 30px 0px;
+    border: 1px solid #DBF0EB;
+    border-radius: 20px;
+    box-shadow: 0px 0px 5px #8ec9b8;
+    background-color: rgba(255, 255, 255, 0.7);
+    transition: all var(--main-transition);
+    box-shadow: 0 2px 6px 0 rgb(0 0 0 / 5%), 0 0 3px 0 rgb(0 0 0 / 10%);
+}
+
+.container .raw main .projects .projects-items ul.projects-items li.projects-item.left,
+.container .raw main .projects .projects-items ul.projects-items li.projects-item.right {
+    overflow: auto;
+    /* Internet Explorer 10+ */
+    -ms-overflow-style: none;
+    /* Firefox */
+    scrollbar-width: none;
+}
+
+.container .raw main .projects .projects-items ul.projects-items li.projects-item.project-one {
+    background: linear-gradient(to right, #f3f2f5, #ece7f3);
+}
+
+.container .raw main .projects .projects-items ul.projects-items li.projects-item.left::-webkit-scrollbar,
+.container .raw main .projects .projects-items ul.projects-items li.projects-item.right::-webkit-scrollbar {
+    display: none;
+    /* Safari and Chrome */
+}
+
+.container .raw main .projects .projects-items ul.projects-items li.projects-item.left {
+    float: left;
+}
+
+.container .raw main .projects .projects-items ul.projects-items li.projects-item.right {
+    float: right;
+}
+
+.container .raw main .projects .projects-items ul.projects-items li.projects-item:hover {
+    transform: scale(1.08);
+    box-shadow: 0 2px 6px 0 rgb(0 0 0 / 35%);
+}
+
+.container .raw main .projects .projects-items ul.projects-items li.projects-item .demos {
+    text-align: center;
+    margin: auto;
+}
+
+.container .raw main .projects .projects-items ul.projects-items li.projects-item .demo-image {
+    cursor: url("http://tholman.com/intense-images/img/plus_cursor.png") 15 15, auto;
+}
+
+.container .raw main .projects .projects-items ul.projects-items li.projects-item .demo-image img {
+    max-width: 450px;
+    max-height: 500px;
+    margin: auto;
+}
+
+.container .raw main .projects .projects-items ul.projects-items li.projects-item.description {
+    position: relative;
+    height: 278px;
+}
+
+.container .raw main .projects .projects-items ul.projects-items li.projects-item.description h1 {
+    font-size: 28px;
+}
+
+.container .raw main .projects .projects-items ul.projects-items li.projects-item.description h5 {
+    padding: 0px 0px 6px;
+    color: var(--main-text-color);
+    font-weight: 700;
+    letter-spacing: 1.1px;
+    line-height: 28px;
+    width: 80%;
+    margin: auto;
+}
+
+.container .raw main .projects .projects-items ul.projects-items li.projects-item.description p {
+    letter-spacing: 0.2px;
+    line-height: 26px;
+    text-align: justify;
+}
 
 /* end projects */
 /* start capabilities */
