@@ -383,7 +383,7 @@ body {
 /* .container .raw main .projects .projects-items .projects-items {} */
 
 .container .raw main .projects .projects-items ul.projects-items li.projects-item {
-    padding: 30px;
+    padding: 15px;
     width: 45%;
     margin: 0px 0px 30px 0px;
     border: 1px solid #DBF0EB;
@@ -403,8 +403,17 @@ body {
     scrollbar-width: none;
 }
 
-.container .raw main .projects .projects-items ul.projects-items li.projects-item.project-one {
-    background: linear-gradient(to right, #f3f2f5, #ece7f3);
+.container .raw main .projects .projects-items ul.projects-items li.projects-item.left.project-one {
+    background: linear-gradient(to left, #f3f2f5, #9fd5c6);
+}
+.container .raw main .projects .projects-items ul.projects-items li.projects-item.right.project-one {
+    background: linear-gradient(to right, #f3f2f5, #9fd5c6);
+}
+.container .raw main .projects .projects-items ul.projects-items li.projects-item.left.project-two {
+    background: linear-gradient(to left, #f3f2f5, #82bff3ec);
+}
+.container .raw main .projects .projects-items ul.projects-items li.projects-item.right.project-two {
+    background: linear-gradient(to right, #f3f2f5, #82bff3ec);
 }
 
 .container .raw main .projects .projects-items ul.projects-items li.projects-item.left::-webkit-scrollbar,
@@ -436,7 +445,8 @@ body {
 }
 
 .container .raw main .projects .projects-items ul.projects-items li.projects-item .demo-image img {
-    max-width: 450px;
+    border-radius: 20px;
+    /* max-width: 450px; */
     max-height: 500px;
     margin: auto;
 }
@@ -843,6 +853,23 @@ footer .bottom-foteer .Copyright .Copyright-text .hight-line {
     }
 
     /* end greeting */
+    /* start projects */
+
+
+    .container .raw main .projects .projects-items ul.projects-items li.projects-item.description h1 {
+        font-size: 26px;
+    }
+
+    .container .raw main .projects .projects-items ul.projects-items li.projects-item.description h5 {
+        line-height: 25px;
+        width: 85%;
+    }
+
+    .container .raw main .projects .projects-items ul.projects-items li.projects-item.description p {
+        line-height: 22px;
+    }
+
+    /* end projects */
     /* start capabilities */
     .container .raw main .capabilities .Capabilities-main {
         flex-direction: column;
@@ -1108,6 +1135,20 @@ footer .bottom-foteer .Copyright .Copyright-text .hight-line {
         width: 80%;
         font-size: 15px;
         line-height: 30px;
+    }
+
+    .container .raw main .projects .projects-items {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .container .raw main .projects .projects-items ul.projects-items li.projects-item {
+        margin: 30px auto;
+        width: 100%;
+    }
+
+    .container .raw main .projects .projects-items ul.projects-items li.projects-item .demo-image img {
+        max-height: none;
     }
 
     /* end projects */
