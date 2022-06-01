@@ -246,7 +246,7 @@ $(function () {
                 'bottom': '0px',
                 'left': '0px',
                 'padding': '20px',
-                'color': '#000',
+                'color': 'rgb(0, 98, 255)',
                 'font-weight': 'bold',
                 'wordSpacing': '0.2px',
                 'webkitFontSmoothing': 'antialiased',
