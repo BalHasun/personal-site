@@ -1,4 +1,4 @@
-$(function () {
+
     // when the page refreshed again save mode
     var modes = localStorage.getItem("mode");
     if (modes === "dark") {
@@ -437,4 +437,4 @@ $(function () {
 
     })();
     // end project section 
-})
+
