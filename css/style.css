@@ -341,11 +341,15 @@ body {
 
 .container .raw main .intro .intro-items {
     text-align: center;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
-
-/* .container .raw main .intro .intro-items .intro-item {}
-.container .raw main .intro .intro-items .intro-item .farktor {}
-.container .raw main .intro .intro-items .intro-item .farktor img.farktor {} */
+.container .raw main .intro .intro-items .intro-item {
+    margin: 10px 0px;
+}
+/*.container .raw main .intro .intro-items .intro-item .farktor {}
+.container .raw main .intro .intro-items .intro-item .farktor img.farktor {}  */
 
 /* end intro */
 
@@ -1112,6 +1116,11 @@ footer .bottom-foteer .Copyright .Copyright-text .hight-line {
     /* start intro */
     .container .raw main .intro {
         padding: 25px 0px;
+    }
+    .container .raw main .intro .intro-items {
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
     }
 
     .container .raw main .intro .intro-caption {
